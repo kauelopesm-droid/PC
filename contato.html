@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | NovaCore PCs</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#0f172a;
+      color:white;
+    }
+
+    header{
+      background:#111827;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      border-bottom:2px solid #22c55e;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:bold;
+      color:#22c55e;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#22c55e;
+    }
+
+    .contato{
+      min-height:85vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:60px 20px;
+    }
+
+    .container{
+      width:100%;
+      max-width:700px;
+      background:#1e293b;
+      padding:40px;
+      border-radius:20px;
+      border:1px solid #22c55e;
+      box-shadow:0 0 25px rgba(34,197,94,0.2);
+    }
+
+    .container h1{
+      text-align:center;
+      margin-bottom:15px;
+      font-size:42px;
+    }
+
+    .container p{
+      text-align:center;
+      color:#cbd5e1;
+      margin-bottom:35px;
+      line-height:1.6;
+    }
+
+    form{
+      display:flex;
+      flex-direction:column;
+      gap:20px;
+    }
+
+    input,
+    textarea{
+      width:100%;
+      padding:15px;
+      border:none;
+      border-radius:10px;
+      background:#0f172a;
+      color:white;
+      font-size:16px;
+      outline:none;
+      border:1px solid transparent;
+      transition:0.3s;
+    }
+
+    input:focus,
+    textarea:focus{
+      border:1px solid #22c55e;
+    }
+
+    textarea{
+      resize:none;
+      height:160px;
+    }
+
+    button{
+      padding:16px;
+      border:none;
+      border-radius:10px;
+      background:#22c55e;
+      color:white;
+      font-size:17px;
+      cursor:pointer;
+      transition:0.3s;
+      font-weight:bold;
+    }
+
+    button:hover{
+      background:#16a34a;
+      transform:scale(1.02);
+    }
+
+    .info{
+      margin-top:35px;
+      text-align:center;
+      color:#cbd5e1;
+      line-height:2;
+    }
+
+    footer{
+      background:#020617;
+      padding:30px;
+      text-align:center;
+      color:#94a3b8;
+      border-top:2px solid #22c55e;
+    }
+
+    @media(max-width:768px){
+
+      nav{
+        display:none;
+      }
+
+      .container{
+        padding:30px 20px;
+      }
+
+      .container h1{
+        font-size:34px;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+
+    <div class="logo">NovaCore PCs</div>
+
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="pcs.html">PCs</a>
+      <a href="pecas.html">Peças</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+
+  </header>
+
+  <section class="contato">
+
+    <div class="container">
+
+      <h1>Entre em Contato</h1>
+
+      <p>
+        Tem alguma dúvida, orçamento ou deseja montar um PC personalizado?
+        Fale com nossa equipe.
+      </p>
+
+      <form>
+
+        <input type="text" placeholder="Seu nome" required>
+
+        <input type="email" placeholder="Seu e-mail" required>
+
+        <input type="text" placeholder="Assunto">
+
+        <textarea placeholder="Digite sua mensagem"></textarea>
+
+        <button type="submit">Enviar Mensagem</button>
+
+      </form>
+
+      <div class="info">
+
+        📞 (18) 99999-9999 <br>
+        📧 contato@novacore.com.br <br>
+        📍 Birigui - SP
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+
+    <p>© 2026 NovaCore PCs - Todos os direitos reservados.</p>
+
+  </footer>
+
+</body>
+</html>

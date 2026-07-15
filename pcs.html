@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PCs Gamers | NovaCore PCs</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#0f172a;
+      color:white;
+    }
+
+    header{
+      background:#111827;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      border-bottom:2px solid #22c55e;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:bold;
+      color:#22c55e;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#22c55e;
+    }
+
+    .topo{
+      text-align:center;
+      padding:60px 20px;
+    }
+
+    .topo h1{
+      font-size:50px;
+      margin-bottom:15px;
+    }
+
+    .topo p{
+      color:#cbd5e1;
+      font-size:18px;
+    }
+
+    .pcs{
+      padding:40px 8% 80px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+      gap:30px;
+    }
+
+    .pc-card{
+      background:#1e293b;
+      border-radius:18px;
+      overflow:hidden;
+      transition:0.3s;
+      border:1px solid transparent;
+    }
+
+    .pc-card:hover{
+      transform:translateY(-8px);
+      border:1px solid #22c55e;
+    }
+
+    .pc-card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .pc-info{
+      padding:25px;
+    }
+
+    .pc-info h2{
+      margin-bottom:10px;
+      font-size:26px;
+    }
+
+    .specs{
+      color:#cbd5e1;
+      line-height:1.8;
+      margin:20px 0;
+    }
+
+    .price{
+      font-size:28px;
+      color:#22c55e;
+      font-weight:bold;
+      margin-bottom:20px;
+    }
+
+    button{
+      width:100%;
+      padding:14px;
+      border:none;
+      border-radius:10px;
+      background:#22c55e;
+      color:white;
+      font-size:17px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    button:hover{
+      background:#16a34a;
+    }
+
+    footer{
+      background:#020617;
+      padding:30px;
+      text-align:center;
+      color:#94a3b8;
+      border-top:2px solid #22c55e;
+    }
+
+    @media(max-width:768px){
+
+      nav{
+        display:none;
+      }
+
+      .topo h1{
+        font-size:38px;
+      }
+
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <header>
+
+    <div class="logo">NovaCore PCs</div>
+
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="#">PCs</a>
+      <a href="peças.html">Peças</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+
+  </header>
+
+  <section class="topo">
+
+    <h1>PCs Gamers</h1>
+
+    <p>
+      Escolha máquinas de alta performance para jogos, lives e trabalhos pesados.
+    </p>
+
+  </section>
+
+  <section class="pcs">
+
+    <div class="pc-card">
+
+      <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=1200&auto=format&fit=crop">
+
+      <div class="pc-info">
+
+        <h2>NovaCore Ultra</h2>
+
+        <div class="specs">
+          Ryzen 7 7800X<br>
+          RTX 4070 Ti<br>
+          32GB RAM DDR5<br>
+          SSD NVMe 1TB
+        </div>
+
+        <div class="price">R$ 9.499</div>
+
+        <button>Comprar Agora</button>
+
+      </div>
+
+    </div>
+
+    <div class="pc-card">
+
+      <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=1200&auto=format&fit=crop">
+
+      <div class="pc-info">
+
+        <h2>NovaCore Elite</h2>
+
+        <div class="specs">
+          Intel i7 14700K<br>
+          RTX 4080<br>
+          64GB RAM DDR5<br>
+          SSD NVMe 2TB
+        </div>
+
+        <div class="price">R$ 13.999</div>
+
+        <button>Comprar Agora</button>
+
+      </div>
+
+    </div>
+
+    <div class="pc-card">
+
+      <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=1200&auto=format&fit=crop">
+
+      <div class="pc-info">
+
+        <h2>NovaCore Starter</h2>
+
+        <div class="specs">
+          Ryzen 5 5600<br>
+          RTX 3060<br>
+          16GB RAM<br>
+          SSD 512GB
+        </div>
+
+        <div class="price">R$ 4.999</div>
+
+        <button>Comprar Agora</button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+
+    <p>© 2026 NovaCore PCs - Todos os direitos reservados.</p>
+
+  </footer>
+
+</body>
+</html>

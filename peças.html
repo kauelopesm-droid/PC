@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peças Gamer | NovaCore PCs</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#0f172a;
+      color:white;
+    }
+
+    header{
+      background:#111827;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      border-bottom:2px solid #22c55e;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:bold;
+      color:#22c55e;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#22c55e;
+    }
+
+    .banner{
+      text-align:center;
+      padding:70px 20px;
+    }
+
+    .banner h1{
+      font-size:52px;
+      margin-bottom:15px;
+    }
+
+    .banner p{
+      color:#cbd5e1;
+      font-size:18px;
+    }
+
+    .pecas{
+      padding:40px 8% 80px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:#1e293b;
+      border-radius:18px;
+      overflow:hidden;
+      transition:0.3s;
+      border:1px solid transparent;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+      border:1px solid #22c55e;
+    }
+
+    .card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .info{
+      padding:25px;
+    }
+
+    .info h2{
+      margin-bottom:10px;
+      font-size:24px;
+    }
+
+    .descricao{
+      color:#cbd5e1;
+      line-height:1.7;
+      margin:18px 0;
+    }
+
+    .price{
+      color:#22c55e;
+      font-size:28px;
+      font-weight:bold;
+      margin-bottom:20px;
+    }
+
+    button{
+      width:100%;
+      padding:14px;
+      border:none;
+      border-radius:10px;
+      background:#22c55e;
+      color:white;
+      font-size:16px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    button:hover{
+      background:#16a34a;
+    }
+
+    footer{
+      background:#020617;
+      padding:30px;
+      text-align:center;
+      color:#94a3b8;
+      border-top:2px solid #22c55e;
+    }
+
+    @media(max-width:768px){
+
+      nav{
+        display:none;
+      }
+
+      .banner h1{
+        font-size:38px;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+
+    <div class="logo">NovaCore PCs</div>
+
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="pcs.html">PCs</a>
+      <a href="#">Peças</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+
+  </header>
+
+  <section class="banner">
+
+    <h1>Peças Gamer</h1>
+
+    <p>
+      Componentes de alta performance para montar ou atualizar seu setup.
+    </p>
+
+  </section>
+
+  <section class="pecas">
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1587202372616-b43abea06c2a?q=80&w=1200&auto=format&fit=crop">
+
+      <div class="info">
+
+        <h2>RTX 4070</h2>
+
+        <div class="descricao">
+          12GB GDDR6X<br>
+          Ray Tracing<br>
+          DLSS 3
+        </div>
+
+        <div class="price">R$ 4.299</div>
+
+        <button>Comprar</button>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop">
+
+      <div class="info">
+
+        <h2>Ryzen 7 7800X3D</h2>
+
+        <div class="descricao">
+          8 núcleos<br>
+          Cache 3D<br>
+          Ideal para games
+        </div>
+
+        <div class="price">R$ 2.799</div>
+
+        <button>Comprar</button>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=1200&auto=format&fit=crop">
+
+      <div class="info">
+
+        <h2>Memória DDR5 32GB</h2>
+
+        <div class="descricao">
+          6000MHz<br>
+          RGB Gamer<br>
+          Dual Channel
+        </div>
+
+        <div class="price">R$ 899</div>
+
+        <button>Comprar</button>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1555617981-dac3880eac6e?q=80&w=1200&auto=format&fit=crop">
+
+      <div class="info">
+
+        <h2>SSD NVMe 1TB</h2>
+
+        <div class="descricao">
+          Leitura ultra rápida<br>
+          PCIe 4.0<br>
+          Ideal para jogos
+        </div>
+
+        <div class="price">R$ 599</div>
+
+        <button>Comprar</button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+
+    <p>© 2026 NovaCore PCs - Todos os direitos reservados.</p>
+
+  </footer>
+
+</body>
+</html>
